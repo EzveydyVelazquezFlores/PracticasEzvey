@@ -125,3 +125,12 @@ h3{
     padding: 17% 0%;
     
 }
+
+
+@media(max-width: 650px){
+  h1{
+    font-size: 2em;
+    text-align: center;
+    flex-direction: column;
+  }
+}

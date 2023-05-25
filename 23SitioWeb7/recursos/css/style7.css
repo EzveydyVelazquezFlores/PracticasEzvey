@@ -28,6 +28,9 @@ body{
     display: flex;
     justify-content: flex-end;
 }
+button{
+    cursor: pointer;
+}
 .contenedor .menu ul li{
     display: inline-flex;
     padding-right: 15px;
@@ -90,4 +93,35 @@ a:hover{
     .cabecera, .item, .producto, .item2, .video {
         width: 100%;
     }
+}
+
+
+/* Formunlario */
+h2{
+    text-align: center;
+    padding-top: 3%;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#formul{
+    padding: 1% 25% 1% 25%;
+    margin: 2% 10% 5% 10%;
+    /* background-color: blanchedalmond; */
+}
+#formul p{
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration-style: solid;
+}
+#formul input{
+    width: 100%;
+}
+#formul textarea{
+    width: 100%;
+}
+#boton{
+    background-color: aliceblue;
+}
+#boton:hover{
+    background-color: bisque;
 }
