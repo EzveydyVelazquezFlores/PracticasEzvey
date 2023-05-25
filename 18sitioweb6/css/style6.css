@@ -1,0 +1,62 @@
+/* Diseño flexible con flexbox */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: fantasy;
+    font-size: 1.2em;
+}
+
+.contenedor{
+    /* Para hacerlo mas flexible */
+    display: flex;
+    /* Para que sea vertical y no horizontal como esta predeterminado */
+    /* flex-direction: column; */
+
+}
+
+.contenedor nav ul li{
+    display: inline;
+    padding-right: 15px;
+}
+
+.contenedor nav a{
+    text-decoration: none;
+}
+
+.contenedor nav a:hover{
+    color: indianred;
+}
+
+.contenedor .cabecera{
+    padding-top: 100px;
+    min-height: 350px;
+    background-image: url("../images/78.jpeg");
+    background-repeat: no repeat;
+    background-size: cover;
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+.izq, .der, .main{
+    border-bottom: 1px silver solid;
+    margin: 2px;
+}
+
+p{
+    margin: 5px;
+    padding: 20px;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+/* Se debe de aplicar una regla para que el contenido se adapte al dispositivo (Media Query) */
+
+@media(max-width: 600px){
+    div, .cabecera{
+        display: flex;
+        flex-direction: column;
+    }
+}
